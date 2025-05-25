@@ -7,6 +7,7 @@ target 'DevFest' do
 
   # Pods for DevFest
   pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView'
 
 
 end

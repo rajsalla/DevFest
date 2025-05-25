@@ -7,16 +7,22 @@
 
 import UIKit
 import FirebaseAuth
+import NVActivityIndicatorView
 
 class LoginTableViewController: UITableViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //facebookLogin()
         //googleLogin()
+        
+        activityIndicator.color = .green
+        activityIndicator.type = .lineSpinFadeLoader
+        activityIndicator.backgroundColor = .gray
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,7 +32,19 @@ class LoginTableViewController: UITableViewController {
     
     
     @IBAction func btnLoginClicked(_ sender: UIButton) {
-        ValidationCode()
+        
+        //activityIndicator.startAnimating()
+        print("Button Clicked")
+        
+        //ValidationCode()
+        
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        if let nextViewController = storyBoard.instantiateViewController(withIdentifier: "HomeNavigationController") as? UINavigationController {
+            nextViewController.modalPresentationStyle = .fullScreen
+            self.present(nextViewController, animated:true, completion:nil)
+        }
     }
     
     @IBAction func btnSignupClicked(_ sender: UIButton) {

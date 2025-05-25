@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,10 +64,21 @@
 		E890119B2B0F5980006ED591 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E890119A2B0F5980006ED591 /* FirebaseStorageCombine-Community */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E846C9F22DE32B3B0035F720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E890110B2B0EFD7C006ED591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E89011122B0EFD7C006ED591;
+			remoteInfo = DevFest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		214C1E6B8F38576C9652C973 /* Pods-DevFest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevFest.debug.xcconfig"; path = "Target Support Files/Pods-DevFest/Pods-DevFest.debug.xcconfig"; sourceTree = "<group>"; };
 		5C574427CF3AABD99153384E /* Pods_DevFest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevFest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD87E7DE107CEE001885C89B /* Pods-DevFest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevFest.release.xcconfig"; path = "Target Support Files/Pods-DevFest/Pods-DevFest.release.xcconfig"; sourceTree = "<group>"; };
+		E846C9EE2DE32B3B0035F720 /* DevFestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevFestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89011132B0EFD7C006ED591 /* DevFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89011162B0EFD7C006ED591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E89011182B0EFD7C006ED591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +109,18 @@
 		E89011632B0F5180006ED591 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E846C9EF2DE32B3B0035F720 /* DevFestTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DevFestTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		E846C9EB2DE32B3B0035F720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E89011102B0EFD7C006ED591 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E89011152B0EFD7C006ED591 /* DevFest */,
+				E846C9EF2DE32B3B0035F720 /* DevFestTests */,
 				E89011142B0EFD7C006ED591 /* Products */,
 				9BD69BE4FB83A677A781EBB5 /* Pods */,
 				0918FB05CDA81A7A06301A27 /* Frameworks */,
@@ -169,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				E89011132B0EFD7C006ED591 /* DevFest.app */,
+				E846C9EE2DE32B3B0035F720 /* DevFestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,8 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				E89011462B0F0FD8006ED591 /* ProductCell.swift */,
-				E89011472B0F0FD8006ED591 /* Controller */,
 				E890114A2B0F0FD8006ED591 /* ProductCell.xib */,
+				E89011472B0F0FD8006ED591 /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +338,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E846C9ED2DE32B3B0035F720 /* DevFestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E846C9F62DE32B3B0035F720 /* Build configuration list for PBXNativeTarget "DevFestTests" */;
+			buildPhases = (
+				E846C9EA2DE32B3B0035F720 /* Sources */,
+				E846C9EB2DE32B3B0035F720 /* Frameworks */,
+				E846C9EC2DE32B3B0035F720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E846C9F32DE32B3B0035F720 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E846C9EF2DE32B3B0035F720 /* DevFestTests */,
+			);
+			name = DevFestTests;
+			packageProductDependencies = (
+			);
+			productName = DevFestTests;
+			productReference = E846C9EE2DE32B3B0035F720 /* DevFestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E89011122B0EFD7C006ED591 /* DevFest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E89011272B0EFD7E006ED591 /* Build configuration list for PBXNativeTarget "DevFest" */;
@@ -370,9 +417,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					E846C9ED2DE32B3B0035F720 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = E89011122B0EFD7C006ED591;
+					};
 					E89011122B0EFD7C006ED591 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -396,11 +447,19 @@
 			projectRoot = "";
 			targets = (
 				E89011122B0EFD7C006ED591 /* DevFest */,
+				E846C9ED2DE32B3B0035F720 /* DevFestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E846C9EC2DE32B3B0035F720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E89011112B0EFD7C006ED591 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,9 +483,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DevFest/Pods-DevFest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DevFest/Pods-DevFest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,6 +521,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E846C9EA2DE32B3B0035F720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E890110F2B0EFD7C006ED591 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +558,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E846C9F32DE32B3B0035F720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E89011122B0EFD7C006ED591 /* DevFest */;
+			targetProxy = E846C9F22DE32B3B0035F720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E89011212B0EFD7E006ED591 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -500,6 +578,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E846C9F42DE32B3B0035F720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5WXVA4GJKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raj.DevFestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevFest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevFest";
+			};
+			name = Debug;
+		};
+		E846C9F52DE32B3B0035F720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5WXVA4GJKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raj.DevFestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevFest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevFest";
+			};
+			name = Release;
+		};
 		E89011252B0EFD7E006ED591 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -680,6 +796,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E846C9F62DE32B3B0035F720 /* Build configuration list for PBXNativeTarget "DevFestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E846C9F42DE32B3B0035F720 /* Debug */,
+				E846C9F52DE32B3B0035F720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E890110E2B0EFD7C006ED591 /* Build configuration list for PBXProject "DevFest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

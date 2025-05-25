@@ -42,6 +42,17 @@ final class ProductViewModel {
             }
     }
 
+    func addProductLocally(_ product: Product) {
+        products.insert(product, at: 0)
+        eventHandler?(.newProductAdded(product: AddProduct(
+            title: product.title,
+            price: product.price,
+            description: product.description,
+            category: product.category,
+            image: product.image
+        )))
+    }
+
 
     func deleteProduct(index: Int) {
         products.remove(at: index)
